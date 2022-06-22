@@ -22,6 +22,11 @@ header i {
     font-size: 3rem;
     color: #fff;
     padding: 20px;
+    transition: all 1s;
+}
+
+header i:hover {
+    transform: scale(1.5) rotate(360deg);
 }
 
 header ul {
@@ -33,6 +38,12 @@ header ul {
 
 header ul li {
     padding: 5px;
+    margin: 2px 0;
+    transition: all 0.2s linear;
+}
+
+header ul li:hover {
+    background-color: rgba(1, 72, 80, 0.707);
 }
 
 header a {
@@ -120,6 +131,19 @@ footer {
     font-size: 3rem;
 }
 
+.logos-redes i:hover {
+    position: relative;
+    animation-name: redes-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes redes-animation {
+
+    0% {right: 10px;}
+    100% {left: 10px;}
+}
+
 .footer-informacion {
     text-align: center;
     padding: 10px 0;
@@ -174,6 +198,15 @@ footer {
     width: 220px;
 }
 
+.botones-contacto {
+    transition: all 0.8s ease;
+}
+
+.botones-contacto:hover {
+    background-color: #014850;
+    color: #fff;
+}
+
 /* SECCION DATOS */
 
 .contacto-datos {
@@ -218,6 +251,12 @@ footer {
 
 .card-producto img {
     width: 200px;
+    padding: 5px 0;
+    transition: all 0.5s linear;
+}
+
+.card-producto img:hover {
+    transform: scale(1.1);
 }
 
 .card-producto h3 {
@@ -233,6 +272,12 @@ footer {
     color: #fff;
     border: solid #fff 2px;
     padding: 5px;
+    transition: all 0.5s linear;
+}
+
+.card-producto a:hover {
+    background-color: #014850;
+    transform: scale(1.2);
 }
 
 /* ----------PAGINA SOBRE NOSOTROS---------- */
@@ -276,6 +321,12 @@ footer {
 
 .seccion-imagenes img {
     width: 100%;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.seccion-imagenes img:hover {
+    transform: scale(1.2);
 }
 
 /* ----------PAGINA PREGUNTAS FRECUENTES---------- */
