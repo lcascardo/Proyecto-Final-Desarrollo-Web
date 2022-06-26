@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://kit.fontawesome.com/0be38900dd.js" crossorigin="anonymous"></script>
     <title>SOBRE NOSOTROS</title>
 </head>
 
@@ -14,85 +15,126 @@
 
     <header>
 
-        <a href="../index.html"><i class="fa-solid fa-spa"></i></a>
-        <nav>
-            <ul>
-                <a href="./productos.html">
-                    <li>PRODUCTOS</li>
-                </a>
-                <a href="./sobre_nosotros.html">
-                    <li>SOBRE NOSOTROS</li>
-                </a>
-                <a href="./preguntas_frecuentes.html">
-                    <li>PREGUNTAS FRECUENTES</li>
-                </a>
-                <a href="./contacto.html">
-                    <li>CONTACTO</li>
-                </a>
-            </ul>
+        <nav class="navbar navbar-expand-lg menu p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/nav-bar-logo/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
-    <!-- INICIO INFORMACION DE PAGINA -->
+
     <main>
 
-        <section class="sobre-nosotros">
+        <section class="seccion-sobre-nosotros d-flex flex-column align-items-center">
 
-            <h1>SOBRE NOSOTROS</h1>
-            <h2>MACETAS DEL SUR</h2>
-            <section class="seccion-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FNgHfQqGIMM"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae sit quaerat error, cupiditate eveniet
-                    cumque doloremque numquam alias iure temporibus ad quas excepturi fuga laborum officia quis totam,
-                    voluptas architecto!
-                    Voluptatum incidunt explicabo aspernatur facere. Odio, repellat? Nisi culpa quam sunt qui maxime, ex
-                    accusantium, assumenda nemo eum tenetur impedit dolores iure asperiores est consequatur nam fugit
-                    hic tempora ratione?</p>
-            </section>
-            <section class="seccion-imagenes">
-                <h3>PROCESO DE ELABORACION</h3>
-                <article>
-                    <div><img src="../img/page-sobre-nosotros/tutorial/tutorial1.jpg" alt="tutorial"></div>
-                    <div><img src="../img/page-sobre-nosotros/tutorial/tutorial2.jpg" alt="tutorial"></div>
-                    <div><img src="../img/page-sobre-nosotros/tutorial/tutorial3.jpg" alt="tutorial"></div>
-                </article>
-            </section>
+            <h1 class="p-3">SOBRE NOSOTROS</h1>
+            <h2 class="p-2">MACETAS DEL SUR</h2>
+            <iframe class="w-75" width="560" height="315" src="https://www.youtube.com/embed/FNgHfQqGIMM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p class="p-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quidem, vero
+                atque unde tempora
+                officiis, perferendis adipisci quas sequi optio voluptas officia, illo harum quaerat itaque cum at.
+                Quam, perspiciatis.
+                Harum repellendus, praesentium ea dolorem maxime quidem error totam accusantium! Facere dignissimos
+                tenetur atque dolorum magni provident, possimus velit tempora sequi dolores. Perferendis, suscipit
+                repudiandae saepe repellendus ipsam nobis quas!
+                Reiciendis earum non deserunt, asperiores odio ab laborum molestias vitae eaque exercitationem
+                cupiditate quos cumque distinctio, suscipit, repellendus omnis rem aliquam aliquid. Porro non error
+                reprehenderit enim adipisci quis. Similique.
+                Veritatis aperiam reiciendis incidunt blanditiis enim, nisi deserunt iure dolorem vero a, quo est quasi
+                sapiente in facere dolore et commodi cum, perspiciatis facilis quos soluta ducimus mollitia magnam.
+                Nostrum!
+            </p>
+            <h2 class="p-2 text-center">PROCESO DE ELABORACION</h2>
+            <div id="carouselExampleControls" class="carousel slide w-75 p-4 slider" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/page-sobre-nosotros/tutorial/tutorial1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/page-sobre-nosotros/tutorial/tutorial2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/page-sobre-nosotros/tutorial/tutorial3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+
+
 
         </section>
 
-    </main>
-    <!-- FIN INFORMACION DE PAGINA -->
-    <!-- INICIO FOOTER -->
-    <footer>
 
-        <div class="logos-redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="footer-informacion">
-            <ul>
-                <li class="footer-informacion_titulos">MEDIOS DE PAGO</li>
-                <li>visa</li>
-                <li>mastercard</li>
-                <li>mercado pago</li>
-            </ul>
-            <ul>
-                <li class="footer-informacion_titulos">CONTACTO</li>
-                <li>macetasdelsur@gmail.com</li>
-                <li>tel: +54 11 56482645</li>
-                <li>Av. Falsa 1234, Belgrano, CABA</li>
-            </ul>
-            <ul>
-                <li class="footer-informacion_titulos">DERECHOS RESERVADOS</li>
-                <li>Copyright © 1999-2022 MacetasDelSur S.R.L.</li>
-            </ul>
+
+    </main>
+
+    <footer class="p-4">
+
+        <div class="d-flex flex-column align-items-center">
+
+            <div class="container-fluid d-flex justify-content-around ">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+
+            <div class="">
+                <ul class="text-center">
+                    <li>MEDIOS DE PAGO</li>
+                    <li>visa</li>
+                    <li>mastercard</li>
+                    <li>mercadopago</li>
+                </ul>
+                <ul class="text-center">
+                    <li>CONTACTO</li>
+                    <li>macetasdelsur@gmail.com</li>
+                    <li>tel: +54 11 56482645</li>
+                    <li>Av. Falsa 1234, Belgrano, CABA</li>
+                </ul>
+                <ul class="text-center">
+                    <li>DERECHOS RESERVADOS</li>
+                    <li>Copyright © 1999-2022 MacetasDelSur S.R.L.</li>
+                </ul>
+            </div>
+
         </div>
 
     </footer>
-    <!-- FIN FOOTER -->
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

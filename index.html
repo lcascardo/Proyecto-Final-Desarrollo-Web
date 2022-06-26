@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://kit.fontawesome.com/0be38900dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <title>MACETAS DEL SUR</title>
 </head>
 
@@ -14,82 +15,98 @@
 
     <header>
 
-        <a href="./index.html"><i class="fa-solid fa-spa"></i></a>
-        <nav>
-            <ul>
-                <a href="./pages/productos.html">
-                    <li>PRODUCTOS</li>
-                </a>
-                <a href="./pages/sobre_nosotros.html">
-                    <li>SOBRE NOSOTROS</li>
-                </a>
-                <a href="./pages/preguntas_frecuentes.html">
-                    <li>PREGUNTAS FRECUENTES</li>
-                </a>
-                <a href="./pages/contacto.html">
-                    <li>CONTACTO</li>
-                </a>
-            </ul>
+        <nav class="navbar navbar-expand-lg menu p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./img/nav-bar-logo/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
-    <!-- INICIO DE INFORMACION DE PAGINA -->
-    <main>
 
-        <div class="contenedor-main-index">
-            <section class="section-bienvenida">
-                <h1>BIENVENIDOS A MACETAS DEL SUR</h1>
-                <div class="section-bienvenida-img">
-                    <img src="./img/section-bienvenida/maceta-a.jpg" alt="maceta">
-                    <img src="./img/section-bienvenida/maceta-b.jpg" alt="maceta">
-                    <img src="./img/section-bienvenida/maceta-c.jpg" alt="maceta">
-                    <img src="./img/section-bienvenida/maceta-d.jpg" alt="maceta">
-                </div>
-            </section>
-            <section class="section-informacion">
-                <h2>NO TE LO PIERDAS!!</h2>
-                <img src="./img/section-informacion/baner.png" alt="banner">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam iste omnis, aliquid ipsum, sequi
-                    error
-                    consectetur quod, corrupti sed non veritatis. Ea id modi alias, nulla quod ipsum accusantium maxime.
-                    Cumque odio iusto voluptatibus corrupti commodi at suscipit iure, quod tenetur natus fuga incidunt
-                    soluta sequi rem iste dolorum facere non illo veniam, nam ex eligendi! Ipsam unde doloribus
-                    praesentium!
-                </p>
-            </section>
-        </div>
+    <main class="container-fluid">
+
+        <section class="row p-4 seccion-bienvenida">
+
+            <h1 class="text-center p-3">BIENVENIDOS A MACETAS DEL SUR</h1>
+            <img class="col-sm-6 col-md-3 p-2" src="./img/section-bienvenida/maceta-a.jpg" alt="maceta-a">
+            <img class="col-sm-6 col-md-3 p-2" src="./img/section-bienvenida/maceta-b.jpg" alt="maceta-b">
+            <img class="col-sm-6 col-md-3 p-2" src="./img/section-bienvenida/maceta-c.jpg" alt="maceta-c">
+            <img class="col-sm-6 col-md-3 p-2" src="./img/section-bienvenida/maceta-d.jpg" alt="maceta-d">
+
+        </section>
+
+        <section class="row p-4 seccion-informacion">
+
+            <h2 class="text-center p-3">NO TE LO PIERDAS</h2>
+            <img src="./img/section-informacion/baner.png" alt="baner">
+            <p class="text-center p-2 fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat corrupti
+                ipsam labore atque veritatis
+                quidem eaque, consectetur voluptatibus animi, quaerat amet accusantium, odit placeat maxime asperiores
+                rem officia soluta! Laboriosam.
+                Natus, deserunt reiciendis cum tempore dolorum saepe esse doloremque alias autem nihil aut perspiciatis
+                fugit quaerat in iusto ea accusamus magni at voluptate ratione explicabo dignissimos! Explicabo dolorem
+                iure natus.
+                Iure, ratione temporibus quia minus quo officiis. Eius similique debitis, animi voluptate minima quis
+                delectus consequatur necessitatibus rerum iste perspiciatis! Quas animi inventore nobis ut recusandae
+                nulla placeat laborum aliquid!
+            </p>
+
+        </section>
 
     </main>
-    <!-- FIN DE INFORMACION DE PAGINA -->
-    <!-- INICIO FOOTER -->
-    <footer>
 
-        <div class="logos-redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="footer-informacion">
-            <ul>
-                <li class="footer-informacion_titulos">MEDIOS DE PAGO</li>
-                <li>visa</li>
-                <li>mastercard</li>
-                <li>mercado pago</li>
-            </ul>
-            <ul>
-                <li class="footer-informacion_titulos">CONTACTO</li>
-                <li>macetasdelsur@gmail.com</li>
-                <li>tel: +54 11 56482645</li>
-                <li>Av. Falsa 1234, Belgrano, CABA</li>
-            </ul>
-            <ul>
-                <li class="footer-informacion_titulos">DERECHOS RESERVADOS</li>
-                <li>Copyright © 1999-2022 MacetasDelSur S.R.L.</li>
-            </ul>
+    <footer class="p-4">
+
+        <div class="d-flex flex-column align-items-center">
+
+            <div class="container-fluid d-flex justify-content-around ">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+
+            <div class="">
+                <ul class="text-center">
+                    <li>MEDIOS DE PAGO</li>
+                    <li>visa</li>
+                    <li>mastercard</li>
+                    <li>mercadopago</li>
+                </ul>
+                <ul class="text-center">
+                    <li>CONTACTO</li>
+                    <li>macetasdelsur@gmail.com</li>
+                    <li>tel: +54 11 56482645</li>
+                    <li>Av. Falsa 1234, Belgrano, CABA</li>
+                </ul>
+                <ul class="text-center">
+                    <li>DERECHOS RESERVADOS</li>
+                    <li>Copyright © 1999-2022 MacetasDelSur S.R.L.</li>
+                </ul>
+            </div>
+
         </div>
 
     </footer>
-    <!-- FIN FOOTER -->
+    <script src="./js/bootstrap.js"></script>
 </body>
 
 </html>
-
