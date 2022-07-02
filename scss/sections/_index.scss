@@ -1,0 +1,109 @@
+.contenedor-main-index {
+    padding: 20px;
+    background-color: $clr-secundario;
+    @include flex-column-center;
+
+    .section-bienvenida {
+        @include flex-column-center;
+
+        h1 {
+            color: $txt-secundario;
+            text-align: center;
+            padding: 10px;
+
+            @include medium {
+                font-size: 1.5rem;
+            }
+
+            @include large {
+                font-size: 1.9rem;
+            }
+        }
+
+        &__img {
+            width: 80%;
+            @include flex-column-center;
+
+            @include medium {
+                width: 90%;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            @include large {
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            img {
+                width: 80%;
+
+                @include medium {
+                    width: 35%;
+                }
+
+                @include large {
+                    width: 25%;
+                }
+            }
+        }
+
+    }
+
+    .section-informacion {
+        @include flex-column-center;
+
+        h2 {
+            color: $txt-secundario;
+            text-align: center;
+            padding: 10px;
+
+            @include medium {
+                font-size: 1.5rem;
+            }
+
+            @include large {
+                font-size: 1.9rem;
+            }
+
+        }
+
+        &__img {
+            @include flex-center;
+            width: 80%;
+
+            img {
+                width: 80%;
+
+                @include medium {
+                    width: 60%;
+                }
+
+                @include large {
+                    width: 60%;
+                }
+            }
+        }
+
+
+        p {
+            color: $txt-secundario;
+            text-align: center;
+            padding: 10px;
+
+            @include small {
+                font-size: 1.2rem;
+            }
+
+            @include medium {
+                font-size: 1.5rem;
+            }
+
+            @include large {
+                font-size: 1.9rem;
+            }
+        }
+
+    }
+}

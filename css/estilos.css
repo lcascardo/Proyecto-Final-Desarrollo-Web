@@ -131,6 +131,10 @@ footer {
     font-size: 3rem;
 }
 
+.logos-redes a {
+    color: #fff;
+}
+
 .logos-redes i:hover {
     position: relative;
     animation-name: redes-animation;
@@ -357,9 +361,10 @@ footer {
     margin: 8px 0;
 }
 
-.preguntas li {
+.preguntas ul li {
     color: #014850;
     padding: 4px;
+    text-align: center;
 }
 
 /* ----------MEDIA QUERIES---------- */
@@ -438,7 +443,7 @@ footer {
     }
 
     .section-informacion img {
-        width: 80%;
+        width: 70%;
     }
 
     .section-informacion p {
@@ -468,6 +473,7 @@ footer {
 
     .section-informacion img {
         padding: 50px;
+        width: 50%;
     }
 
     .section-informacion p {
@@ -813,31 +819,8 @@ footer {
         font-size: 2rem;
     }
 
-    .preguntas li {
+    .preguntas ul li {
         font-size: 1.8rem;
+        text-align: start;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

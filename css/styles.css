@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #3cc4c4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+header a i {
+  font-size: 2rem;
+  transition: all 1s;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header a i {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header a i {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  header a i {
+    font-size: 3.5rem;
+  }
+}
+header a i:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+header li {
+  list-style: none;
+}
+header .nav-bar__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  header .nav-bar__contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+header .nav-bar__contenedor a {
+  font-size: 1.1rem;
+  padding: 10px;
+  transition: all 0.2s linear;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header .nav-bar__contenedor a {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .nav-bar__contenedor a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .nav-bar__contenedor a {
+    font-size: 1.6rem;
+  }
+}
+header .nav-bar__contenedor a:hover {
+  background-color: rgba(1, 72, 80, 0.707);
+}
+
+.contenedor-main-index {
+  padding: 20px;
+  background-color: #30abab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-main-index .section-bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-main-index .section-bienvenida h1 {
+  color: #014850;
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-bienvenida h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-bienvenida h1 {
+    font-size: 1.9rem;
+  }
+}
+.contenedor-main-index .section-bienvenida__img {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-bienvenida__img {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-bienvenida__img {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.contenedor-main-index .section-bienvenida__img img {
+  width: 80%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-bienvenida__img img {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-bienvenida__img img {
+    width: 25%;
+  }
+}
+.contenedor-main-index .section-informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-main-index .section-informacion h2 {
+  color: #014850;
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-informacion h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-informacion h2 {
+    font-size: 1.9rem;
+  }
+}
+.contenedor-main-index .section-informacion__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.contenedor-main-index .section-informacion__img img {
+  width: 80%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-informacion__img img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-informacion__img img {
+    width: 60%;
+  }
+}
+.contenedor-main-index .section-informacion p {
+  color: #014850;
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .contenedor-main-index .section-informacion p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-informacion p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-informacion p {
+    font-size: 1.9rem;
+  }
+}
+
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #3cc4c4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .logos-redes {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .logos-redes a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  footer .logos-redes a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .logos-redes a {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .logos-redes a {
+    font-size: 3rem;
+  }
+}
+footer .logos-redes a:hover {
+  position: relative;
+  animation-name: redes-animation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+footer .footer-informacion {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-informacion ul li {
+  list-style: none;
+  text-align: center;
+  padding: 3px;
+  color: #fff;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .footer-informacion ul li {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .footer-informacion ul li {
+    font-size: 1.3rem;
+  }
+}
+footer .footer-informacion ul .footer-informacion__titulos {
+  font-weight: bolder;
+  padding: 5px;
+}
+
+@keyframes redes-animation {
+  0% {
+    right: 10px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+.productos {
+  background-color: #30abab;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productos h1 {
+  color: #014850;
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  .productos h1 {
+    font-size: 2rem;
+  }
+}
+.productos__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .productos__contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 992px) {
+  .productos__contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+.productos__contenedor .card-producto {
+  padding: 10px;
+  margin: 10px;
+  border: solid #014850 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .productos__contenedor .card-producto {
+    width: 25%;
+  }
+}
+.productos__contenedor .card-producto img {
+  width: 200px;
+  transition: all 0.5s linear;
+}
+.productos__contenedor .card-producto img:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 992px) {
+  .productos__contenedor .card-producto img {
+    width: 100%;
+  }
+}
+.productos__contenedor .card-producto h3 {
+  color: #014850;
+  margin-top: 10px;
+}
+.productos__contenedor .card-producto p {
+  color: #014850;
+  margin: 4px;
+}
+.productos__contenedor .card-producto a {
+  text-decoration: none;
+  color: #fff;
+  border: solid #fff 2px;
+  padding: 5px;
+  transition: all 0.5s linear;
+}
+.productos__contenedor .card-producto a:hover {
+  background-color: #014850;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,78 @@
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $clr-primario;
+    padding: 20px;
+    @include flex-column-center;
+
+    .logos-redes {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $txt-primario;
+            font-size: 1.3rem;
+
+            @include small {
+                font-size: 1.5rem;
+            }
+
+            @include medium {
+                font-size: 2rem;
+            }
+
+            @include large {
+                font-size: 3rem;
+            }
+
+            &:hover {
+                position: relative;
+                animation-name: redes-animation;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    .footer-informacion {
+        padding: 20px;
+        @include flex-column-center;
+
+        ul {
+            li {
+                list-style: none;
+                text-align: center;
+                padding: 3px;
+                color: $txt-primario;
+
+                @include medium {
+                    font-size: 1.3rem;
+                }
+
+                @include large {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .footer-informacion__titulos {
+                font-weight: bolder;
+                padding: 5px;
+            }
+        }
+
+
+    }
+}
+
+@keyframes redes-animation {
+
+    0% {
+        right: 10px;
+    }
+
+    100% {
+        left: 10px;
+    }
+}

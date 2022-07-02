@@ -1,0 +1,74 @@
+.productos {
+    background-color: $clr-secundario;
+    padding: 20px;
+    @include flex-column-center;
+
+    h1 {
+        color: $txt-secundario;
+        padding: 10px;
+        @include large {
+            font-size: 2rem;
+        }
+    }
+
+    &__contenedor {
+        @include flex-column-center;
+        @include medium {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @include large {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+
+        .card-producto {
+            padding: 10px;
+            margin: 10px;
+            border: solid #014850 4px;
+            overflow: hidden;
+            @include flex-column-center;
+            @include large {
+                width: 25%;
+            }
+
+            img {
+                width: 200px;
+                transition: all 0.5s linear;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                @include large {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                color: $txt-secundario;
+                margin-top: 10px;
+            }
+
+            p {
+                color: $txt-secundario;
+                margin: 4px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                border: solid #fff 2px;
+                padding: 5px;
+                transition: all 0.5s linear;
+
+                &:hover {
+                    background-color: #014850;
+                    transform: scale(1.2);
+                }
+
+
+            }
+        }
+    }
+
+}

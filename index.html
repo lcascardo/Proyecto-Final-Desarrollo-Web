@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/0be38900dd.js" crossorigin="anonymous"></script>
     <title>MACETAS DEL SUR</title>
 </head>
@@ -15,8 +15,8 @@
     <header>
 
         <a href="./index.html"><i class="fa-solid fa-spa"></i></a>
-        <nav>
-            <ul>
+        <nav class="nav-bar">
+            <ul class="nav-bar__contenedor">
                 <a href="./pages/productos.html">
                     <li>PRODUCTOS</li>
                 </a>
@@ -39,7 +39,7 @@
         <div class="contenedor-main-index">
             <section class="section-bienvenida">
                 <h1>BIENVENIDOS A MACETAS DEL SUR</h1>
-                <div class="section-bienvenida-img">
+                <div class="section-bienvenida__img">
                     <img src="./img/section-bienvenida/maceta-a.jpg" alt="maceta">
                     <img src="./img/section-bienvenida/maceta-b.jpg" alt="maceta">
                     <img src="./img/section-bienvenida/maceta-c.jpg" alt="maceta">
@@ -48,13 +48,9 @@
             </section>
             <section class="section-informacion">
                 <h2>NO TE LO PIERDAS!!</h2>
-                <img src="./img/section-informacion/baner.png" alt="banner">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam iste omnis, aliquid ipsum, sequi
-                    error
-                    consectetur quod, corrupti sed non veritatis. Ea id modi alias, nulla quod ipsum accusantium maxime.
-                    Cumque odio iusto voluptatibus corrupti commodi at suscipit iure, quod tenetur natus fuga incidunt
-                    soluta sequi rem iste dolorum facere non illo veniam, nam ex eligendi! Ipsam unde doloribus
-                    praesentium!
+                <div class="section-informacion__img"><img src="./img/section-informacion/baner.png" alt="banner"></div>
+                <p>Dale más vida a tu hogar con nuestra amplia selección de macetas.
+                    Podes encontrarnos en nuestras sucursales de Belgrano o Lanús Oeste.
                 </p>
             </section>
         </div>
@@ -65,24 +61,24 @@
     <footer>
 
         <div class="logos-redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="footer-informacion">
             <ul>
-                <li class="footer-informacion_titulos">MEDIOS DE PAGO</li>
+                <li class="footer-informacion__titulos">MEDIOS DE PAGO</li>
                 <li>visa</li>
                 <li>mastercard</li>
                 <li>mercado pago</li>
             </ul>
             <ul>
-                <li class="footer-informacion_titulos">CONTACTO</li>
+                <li class="footer-informacion__titulos">CONTACTO</li>
                 <li>macetasdelsur@gmail.com</li>
                 <li>tel: +54 11 56482645</li>
                 <li>Av. Falsa 1234, Belgrano, CABA</li>
             </ul>
             <ul>
-                <li class="footer-informacion_titulos">DERECHOS RESERVADOS</li>
+                <li class="footer-informacion__titulos">DERECHOS RESERVADOS</li>
                 <li>Copyright © 1999-2022 MacetasDelSur S.R.L.</li>
             </ul>
         </div>
@@ -92,4 +88,3 @@
 </body>
 
 </html>
-
