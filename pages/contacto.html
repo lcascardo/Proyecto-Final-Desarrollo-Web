@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <meta name="description" content="Contactenos ya, disponible las 24hs. Ubicados en Argentina,Buenos Aires. Sucursales en Lnaus Oeste y Belgrano CABA">
+    <meta name="owner" content="Lucas Cascardo"> 
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/0be38900dd.js" crossorigin="anonymous"></script>
-    <title>CONTACTO</title>
+    <title>Macetas del Sur | Contacto</title>
 </head>
 
 <body>
@@ -15,8 +17,8 @@
     <header>
 
         <a href="../index.html"><i class="fa-solid fa-spa"></i></a>
-        <nav>
-            <ul>
+        <nav class="nav-bar">
+            <ul class="nav-bar__contenedor">
                 <a href="./productos.html">
                     <li>PRODUCTOS</li>
                 </a>
@@ -38,7 +40,7 @@
 
         <div class="contenedor-main-contacto">
             <!-- INICIO FORMULARIO -->
-            <section class="contacto-formulario">
+            <section class="contacto__formulario">
                 <h1>CONTACTO</h1>
                 <form>
                     <fieldset>
@@ -53,15 +55,15 @@
                         <label for="newsletter">¿Desea recibir el Newsletter?</label>
                         <input type="checkbox" name="newsletter">
                         <textarea name="mensaje" id="form_mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
-                        <input class="botones-contacto" type="submit" value="Enviar" name="boton_enviar">
-                        <input class="botones-contacto" type="reset" value="Limpiar formulario" name="reset">
+                        <input class="boton_enviar" type="submit" value="Enviar" name="boton_enviar">
+                        <input class="boton_reset" type="reset" value="Limpiar formulario" name="reset">
 
                     </fieldset>
                 </form>
             </section>
             <!-- FIN FORMULARIO -->
             <!-- INICIO SECCION DATOS -->
-            <section class="contacto-datos">
+            <section class="contacto__datos">
                 <h2>CONTACTENOS</h2>
                 <p>tel: 11 5544-6487</p>
                 <p>macetasdelsur@gmail.com</p>
@@ -70,7 +72,7 @@
             </section>
             <!-- FIN SECCION DATOS -->
             <!-- INICIO MAPA -->
-            <section class="contacto-mapa">
+            <section class="contacto__mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44379385369!2d-58.50350968364614!3d-34.6156623605846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1654549074267!5m2!1ses-419!2sar"
                     width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
@@ -85,24 +87,24 @@
     <footer>
 
         <div class="logos-redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="footer-informacion">
             <ul>
-                <li class="footer-informacion_titulos">MEDIOS DE PAGO</li>
+                <li class="footer-informacion__titulos">MEDIOS DE PAGO</li>
                 <li>visa</li>
                 <li>mastercard</li>
                 <li>mercado pago</li>
             </ul>
             <ul>
-                <li class="footer-informacion_titulos">CONTACTO</li>
+                <li class="footer-informacion__titulos">CONTACTO</li>
                 <li>macetasdelsur@gmail.com</li>
                 <li>tel: +54 11 56482645</li>
                 <li>Av. Falsa 1234, Belgrano, CABA</li>
             </ul>
             <ul>
-                <li class="footer-informacion_titulos">DERECHOS RESERVADOS</li>
+                <li class="footer-informacion__titulos">DERECHOS RESERVADOS</li>
                 <li>Copyright © 1999-2022 MacetasDelSur S.R.L.</li>
             </ul>
         </div>

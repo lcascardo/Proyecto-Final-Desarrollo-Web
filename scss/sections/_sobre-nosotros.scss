@@ -1,0 +1,143 @@
+.sobre-nosotros {
+    background-color: $clr-secundario;
+
+    h1 {
+        text-align: center;
+        padding: 10px 0;
+        color: $txt-secundario;
+
+        @include small {
+            font-size: 2rem;
+        }
+
+        @include medium {
+            font-size: 2.5rem;
+        }
+
+        @include large {
+            font-size: 2.5rem;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px 0;
+        color: $txt-secundario;
+
+        @include small {
+            font-size: 2rem;
+        }
+
+        @include medium {
+            font-size: 2.5rem;
+        }
+
+        @include large {
+            font-size: 2.5rem;
+        }
+    }
+
+    .seccion-video {
+        @include flex-column-center;
+
+        iframe {
+            width: 100%;
+
+            @include small {
+                width: 80%;
+            }
+
+            @include medium {
+                width: 80%;
+            }
+
+            @include large {
+                width: 80%;
+                height: 700px;
+            }
+        }
+
+        p {
+            color: $txt-secundario;
+            padding: 10px;
+            text-align: center;
+
+            @include small {
+                font-size: 1.4rem;
+            }
+
+            @include medium {
+                font-size: 1.4rem;
+            }
+
+            @include large {
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+
+    .seccion-imagenes {
+        @include flex-column-center;
+
+        h3 {
+            color: $txt-secundario;
+            padding: 10px 0;
+
+            @include small {
+                font-size: 2rem;
+            }
+
+            @include medium {
+                font-size: 2.5rem;
+            }
+
+            @include large {
+                font-size: 2.5rem;
+            }
+        }
+
+        article {
+            @include medium {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            @include large {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            div {
+                width: 300px;
+                margin: 10px 0;
+
+                @include small {
+                    width: 400px;
+                }
+
+                @include medium {
+                    margin: 10px 10px;
+                    width: 40%;
+                }
+
+                @include large {
+                    margin: 10px 10px;
+                    width: 40%;
+                }
+
+                img {
+                    width: 100%;
+                    transition: all 1s ease;
+                    overflow: hidden;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}

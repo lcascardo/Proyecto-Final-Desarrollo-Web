@@ -33,3 +33,20 @@
     justify-content: center;
 }
 
+// MAPS PREGUNTAS FRECUENTES //
+
+$preguntas-frecuentes:(
+    titulo:#014850,
+    pregunta: #175655,
+    respuesta: #f1f3f9
+);
+
+
+// EXTENDS CONTACTO //
+
+%boton {
+    width: 150px;
+    background-color: #808080;
+    border-radius: 10px;
+}
+
