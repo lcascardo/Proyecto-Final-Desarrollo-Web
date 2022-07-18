@@ -20,6 +20,53 @@
             }
         }
 
+        p {
+            color: $txt-secundario;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            border: solid $txt-secundario 5px;
+            font-weight: bold;
+
+            @include small {
+                font-size: 1.2rem;
+            }
+
+            @include medium {
+                font-size: 1.5rem;
+            }
+
+            @include large {
+                font-size: 1.9rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $txt-primario;
+            font-weight: bolder;
+            margin: 20px 0;
+            padding: 5px;
+            border: solid $txt-primario 4px;
+            transition: all 0.5s linear;
+
+            @include small {
+                font-size: 1.2rem;
+            }
+
+            @include medium {
+                font-size: 1.5rem;
+            }
+
+            @include large {
+                font-size: 1.9rem;
+            }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+        }
+
         &__img {
             width: 80%;
             @include flex-column-center;
@@ -83,25 +130,6 @@
                 @include large {
                     width: 60%;
                 }
-            }
-        }
-
-
-        p {
-            color: $txt-secundario;
-            text-align: center;
-            padding: 10px;
-
-            @include small {
-                font-size: 1.2rem;
-            }
-
-            @include medium {
-                font-size: 1.5rem;
-            }
-
-            @include large {
-                font-size: 1.9rem;
             }
         }
 

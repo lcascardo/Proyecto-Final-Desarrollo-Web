@@ -39,13 +39,19 @@
         }
 
         form {
+            @include large {
+                width: 80%;
+            }
+
             fieldset {
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
 
                 @include small {
                     align-items: center;
+                    justify-content: center;
                 }
 
                 @include medium {
@@ -62,16 +68,20 @@
                 }
 
                 input {
-                    width: 200px;
+                    width: 80%;
                     margin: 5px 0;
 
                     @include small {
-                        width: 40%;
+                        width: 60%;
                     }
 
                     @include medium {
-                        width: 40%;
+                        width: 80%;
                         font-size: 1.2rem;
+                    }
+
+                    @include large {
+                        max-width: 350px;
                     }
                 }
 
@@ -89,15 +99,20 @@
                 }
 
                 textarea {
-                    width: 220px;
+                    width: 80%;
 
                     @include small {
-                        width: 50%;
+                        width: 60%;
                     }
 
                     @include medium {
-                        width: 50%;
+                        width: 80%;
                         font-size: 1.2rem;
+                    }
+
+                    @include large {
+                        height: 400px;
+                        width: 350px;
                     }
                 }
 

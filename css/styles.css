@@ -115,6 +115,56 @@ header .nav-bar__contenedor a:hover {
     font-size: 1.9rem;
   }
 }
+.contenedor-main-index .section-bienvenida p {
+  color: #014850;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid #014850 5px;
+  font-weight: bold;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .contenedor-main-index .section-bienvenida p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-bienvenida p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-bienvenida p {
+    font-size: 1.9rem;
+  }
+}
+.contenedor-main-index .section-bienvenida a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  margin: 20px 0;
+  padding: 5px;
+  border: solid #fff 4px;
+  transition: all 0.5s linear;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .contenedor-main-index .section-bienvenida a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-main-index .section-bienvenida a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-index .section-bienvenida a {
+    font-size: 1.9rem;
+  }
+}
+.contenedor-main-index .section-bienvenida a:hover {
+  transform: scale(1.2);
+}
 .contenedor-main-index .section-bienvenida__img {
   width: 80%;
   display: flex;
@@ -187,26 +237,6 @@ header .nav-bar__contenedor a:hover {
 @media screen and (min-width: 992px) {
   .contenedor-main-index .section-informacion__img img {
     width: 60%;
-  }
-}
-.contenedor-main-index .section-informacion p {
-  color: #014850;
-  text-align: center;
-  padding: 10px;
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .contenedor-main-index .section-informacion p {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .contenedor-main-index .section-informacion p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .contenedor-main-index .section-informacion p {
-    font-size: 1.9rem;
   }
 }
 
@@ -350,7 +380,7 @@ footer .footer-informacion ul .footer-informacion__titulos {
     width: 100%;
   }
 }
-.productos__contenedor .card-producto h3 {
+.productos__contenedor .card-producto h2 {
   color: #014850;
   margin-top: 10px;
 }
@@ -370,7 +400,19 @@ footer .footer-informacion ul .footer-informacion__titulos {
   transform: scale(1.2);
 }
 
-.preguntas-frecuentes {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .preguntas-frecuentes {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .preguntas-frecuentes {
+    display: flex;
+    align-items: center;
+  }
+}
+.preguntas-frecuentes .faq-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -379,68 +421,96 @@ footer .footer-informacion ul .footer-informacion__titulos {
   padding: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .preguntas-frecuentes {
+  .preguntas-frecuentes .faq-txt {
     align-items: flex-start;
   }
 }
 @media screen and (min-width: 992px) {
-  .preguntas-frecuentes {
+  .preguntas-frecuentes .faq-txt {
     align-items: flex-start;
+    width: 50vw;
   }
 }
-.preguntas-frecuentes h1 {
+.preguntas-frecuentes .faq-txt h1 {
   color: #014850;
   text-align: center;
   padding: 10px;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .preguntas-frecuentes h1 {
+  .preguntas-frecuentes .faq-txt h1 {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .preguntas-frecuentes h1 {
+  .preguntas-frecuentes .faq-txt h1 {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .preguntas-frecuentes .preguntas {
+  .preguntas-frecuentes .faq-txt .preguntas {
     margin-left: 40px;
   }
 }
 @media screen and (min-width: 992px) {
-  .preguntas-frecuentes .preguntas {
+  .preguntas-frecuentes .faq-txt .preguntas {
     margin-left: 40px;
   }
 }
-.preguntas-frecuentes .preguntas_titulo {
+.preguntas-frecuentes .faq-txt .preguntas_titulo {
   color: #175655;
   margin: 10px 0;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .preguntas-frecuentes .preguntas_titulo {
+  .preguntas-frecuentes .faq-txt .preguntas_titulo {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .preguntas-frecuentes .preguntas_titulo {
+  .preguntas-frecuentes .faq-txt .preguntas_titulo {
     font-size: 1.4rem;
   }
 }
-.preguntas-frecuentes .preguntas_respuestas {
+.preguntas-frecuentes .faq-txt .preguntas_respuestas {
   color: #f1f3f9;
   list-style: none;
   padding: 5px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .preguntas-frecuentes .preguntas_respuestas {
+  .preguntas-frecuentes .faq-txt .preguntas_respuestas {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .preguntas-frecuentes .preguntas_respuestas {
+  .preguntas-frecuentes .faq-txt .preguntas_respuestas {
     font-size: 1.4rem;
   }
+}
+.preguntas-frecuentes .faq-img {
+  display: none;
+  width: 50vw;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .preguntas-frecuentes .faq-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .preguntas-frecuentes .faq-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .preguntas-frecuentes .faq-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.preguntas-frecuentes .faq-img img {
+  width: 80%;
 }
 
 .contenedor-main-contacto {
@@ -486,14 +556,21 @@ footer .footer-informacion ul .footer-informacion__titulos {
     font-size: 2.1rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .contenedor-main-contacto .contacto__formulario form {
+    width: 80%;
+  }
+}
 .contenedor-main-contacto .contacto__formulario form fieldset {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .contenedor-main-contacto .contacto__formulario form fieldset {
     align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -511,18 +588,23 @@ footer .footer-informacion ul .footer-informacion__titulos {
   text-align: center;
 }
 .contenedor-main-contacto .contacto__formulario form fieldset input {
-  width: 200px;
+  width: 80%;
   margin: 5px 0;
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .contenedor-main-contacto .contacto__formulario form fieldset input {
-    width: 40%;
+    width: 60%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .contenedor-main-contacto .contacto__formulario form fieldset input {
-    width: 40%;
+    width: 80%;
     font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-contacto .contacto__formulario form fieldset input {
+    max-width: 350px;
   }
 }
 .contenedor-main-contacto .contacto__formulario form fieldset select {
@@ -540,17 +622,23 @@ footer .footer-informacion ul .footer-informacion__titulos {
   }
 }
 .contenedor-main-contacto .contacto__formulario form fieldset textarea {
-  width: 220px;
+  width: 80%;
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .contenedor-main-contacto .contacto__formulario form fieldset textarea {
-    width: 50%;
+    width: 60%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .contenedor-main-contacto .contacto__formulario form fieldset textarea {
-    width: 50%;
+    width: 80%;
     font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contenedor-main-contacto .contacto__formulario form fieldset textarea {
+    height: 400px;
+    width: 350px;
   }
 }
 .contenedor-main-contacto .contacto__formulario form fieldset .boton_enviar {
