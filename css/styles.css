@@ -275,12 +275,6 @@ footer .logos-redes a {
     font-size: 3rem;
   }
 }
-footer .logos-redes a:hover {
-  position: relative;
-  animation-name: redes-animation;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-}
 footer .footer-informacion {
   padding: 20px;
   display: flex;
@@ -309,14 +303,6 @@ footer .footer-informacion ul .footer-informacion__titulos {
   padding: 5px;
 }
 
-@keyframes redes-animation {
-  0% {
-    right: 10px;
-  }
-  100% {
-    left: 10px;
-  }
-}
 .productos {
   background-color: #30abab;
   padding: 20px;

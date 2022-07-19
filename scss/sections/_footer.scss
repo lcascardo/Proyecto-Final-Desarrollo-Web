@@ -26,13 +26,6 @@ footer {
             @include large {
                 font-size: 3rem;
             }
-
-            &:hover {
-                position: relative;
-                animation-name: redes-animation;
-                animation-duration: 0.5s;
-                animation-iteration-count: infinite;
-            }
         }
     }
 
@@ -63,16 +56,5 @@ footer {
         }
 
 
-    }
-}
-
-@keyframes redes-animation {
-
-    0% {
-        right: 10px;
-    }
-
-    100% {
-        left: 10px;
     }
 }
