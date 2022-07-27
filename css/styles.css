@@ -336,7 +336,7 @@ footer .footer-informacion ul .footer-informacion__titulos {
   .productos__contenedor {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
   }
 }
 .productos__contenedor .card-producto {
